@@ -41,18 +41,10 @@ const updateStyle = (name: string, value: any) => {
         <div class="panel-section">
           <div class="section-title">组件属性</div>
           <template v-if="componentMeta?.props">
-            <div
-              v-for="prop in componentMeta.props"
-              :key="prop.name"
-              class="prop-item"
-            >
+            <div v-for="prop in componentMeta.props" :key="prop.name" class="prop-item">
               <div class="prop-label">{{ prop.label }}</div>
-              <el-input
-                v-if="prop.type === 'string'"
-                v-model="selectedComponent.props[prop.name]"
-                @input="(value) => updateProp(prop.name, value)"
-                size="small"
-              />
+              <el-input v-if="prop.type === 'string'" v-model="selectedComponent.props[prop.name]"
+                @input="(value) => updateProp(prop.name, value)" size="small" />
             </div>
           </template>
         </div>
@@ -61,21 +53,15 @@ const updateStyle = (name: string, value: any) => {
           <div class="section-title">样式属性</div>
           <div class="prop-item">
             <div class="prop-label">宽度</div>
-            <el-input
-              v-model="selectedComponent.style.width"
-              @input="(value) => updateStyle('width', value)"
-              size="small"
-            >
+            <el-input v-model="selectedComponent.style.width" @input="(value) => updateStyle('width', value)"
+              size="small">
               <template #append>px</template>
             </el-input>
           </div>
           <div class="prop-item">
             <div class="prop-label">高度</div>
-            <el-input
-              v-model="selectedComponent.style.height"
-              @input="(value) => updateStyle('height', value)"
-              size="small"
-            >
+            <el-input v-model="selectedComponent.style.height" @input="(value) => updateStyle('height', value)"
+              size="small">
               <template #append>px</template>
             </el-input>
           </div>

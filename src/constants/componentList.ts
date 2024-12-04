@@ -5,7 +5,7 @@ export const componentList: ComponentMeta[] = [
     type: 'basic',
     label: '基础组件',
     children: [
-      { 
+      {
         type: 'text-component',
         label: '文字',
         icon: 'Document',
@@ -15,7 +15,7 @@ export const componentList: ComponentMeta[] = [
         ],
         events: []
       },
-      { 
+      {
         type: 'button-component',
         label: '按钮',
         icon: 'Pointer',
@@ -25,7 +25,7 @@ export const componentList: ComponentMeta[] = [
         ],
         events: []
       },
-      { 
+      {
         type: 'image-component',
         label: '图片',
         icon: 'Picture',
@@ -42,7 +42,7 @@ export const componentList: ComponentMeta[] = [
     type: 'form',
     label: '表单组件',
     children: [
-      { 
+      {
         type: 'el-input',
         label: '输入框',
         icon: 'Edit',
@@ -52,7 +52,7 @@ export const componentList: ComponentMeta[] = [
         ],
         events: []
       },
-      { 
+      {
         type: 'el-select',
         label: '下拉框',
         icon: 'List',
@@ -66,7 +66,7 @@ export const componentList: ComponentMeta[] = [
     type: 'chart',
     label: '图表组件',
     children: [
-      { 
+      {
         type: 'line-chart',
         label: '折线图',
         icon: 'TrendCharts',
@@ -74,7 +74,7 @@ export const componentList: ComponentMeta[] = [
         props: [],
         events: []
       },
-      { 
+      {
         type: 'bar-chart',
         label: '柱状图',
         icon: 'Histogram',
@@ -88,7 +88,7 @@ export const componentList: ComponentMeta[] = [
     type: 'three',
     label: '3D组件',
     children: [
-      { 
+      {
         type: 'model-viewer',
         label: '模型查看器',
         icon: 'Monitor',
@@ -96,7 +96,7 @@ export const componentList: ComponentMeta[] = [
         props: [],
         events: []
       },
-      { 
+      {
         type: 'scene-container',
         label: '场景容器',
         icon: 'Monitor',

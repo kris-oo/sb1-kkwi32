@@ -18,10 +18,11 @@ export interface Animation {
 export interface ComponentMeta {
   type: string;
   label: string;
-  icon: string;
-  category: string;
-  props: PropMeta[];
-  events: EventMeta[];
+  icon?: string;
+  category?: string;
+  props?: PropMeta[];
+  events?: EventMeta[];
+  children?: ComponentMeta[];
 }
 
 export interface PropMeta {

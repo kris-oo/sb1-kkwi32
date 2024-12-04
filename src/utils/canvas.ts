@@ -8,7 +8,6 @@ export const calculateComponentPosition = (
   const rect = canvasElement.getBoundingClientRect();
   const scrollLeft = canvasElement.scrollLeft;
   const scrollTop = canvasElement.scrollTop;
-  
   return {
     left: `${event.clientX - rect.left + scrollLeft}px`,
     top: `${event.clientY - rect.top + scrollTop}px`,
@@ -21,10 +20,10 @@ export const createComponent = (
 ): ComponentSchema => {
   const baseComponent = JSON.parse(componentData);
   const defaultStyle = {
-    width: '200px',
-    height: baseComponent.type.includes('input') ? '32px' : '100px',
+    width: 'auto',
+    height: baseComponent.type.includes('input') ? '32px' : 'auto',
   };
-  
+
   return {
     ...baseComponent,
     id: nanoid(),
